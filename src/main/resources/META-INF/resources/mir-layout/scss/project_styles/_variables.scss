@@ -14,8 +14,27 @@
 //  project settings
 // --------------------------------------------------
 
+$wGreen:      #AFCA0B;
+$wBlue:       #2581C4;
+$wBlueLight:  #e7f6ff;
+$bText:       #364151;
+$wGrayLight:  #f9f9f9;
+$wGrayContur: #e6e6e6;
+$wGrayLine:   #eaeaea;
 
 
 // --------------------------------------------------
 //  overwrite bootstrap
 // --------------------------------------------------
+
+$primary: $wBlue;
+$secondary: $wGreen;
+
+$body-color: $bText;
+$font-size-base: 1rem;
+$web-font-path: "https://webfonts.gbv.de/css2?family=Montserrat:wght@600&family=Source+Sans+3&display=swap";
+$font-family-sans-serif: 'Source Sans 3', Helvetica, Arial, sans-serif;
+$headings-font-family: Montserrat, Helvetica, Arial, sans-serif;
+$headings-font-weight: 600;
+
+$navbar-light-color: $bText;
