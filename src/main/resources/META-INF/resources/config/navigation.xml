@@ -11,18 +11,26 @@
       <label xml:lang="de">Start</label>
       <label xml:lang="en">Start</label>
     </item>
-    <item href="/content/brand/impressum.xml" type="intern">
-      <label xml:lang="de">Impressum</label>
-      <label xml:lang="en">Impressum</label>
-    </item>
-    <item href="/content/brand/contact.xml" type="intern">
-      <label xml:lang="de">Kontakt</label>
-      <label xml:lang="en">Contact</label>
-    </item>
   </menu>
   <menu id="below" dir="/content/below">
-    <label xml:lang="de">Footer-Menü</label>
-    <label xml:lang="en">Footer menu</label>
+    <label xml:lang="de">Fußzeile</label>
+    <label xml:lang="en">Footer</label>
+    <item href="/content/below/imprint.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <label xml:lang="de">Impressum</label>
+        <label xml:lang="en">Imprint</label>
+    </item>
+    <item href="/content/below/rights.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <label xml:lang="de">Datenschutz</label>
+        <label xml:lang="en">Privacy Notice</label>
+    </item>
+    <item href="/content/below/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <label xml:lang="de">Kontakt</label>
+        <label xml:lang="en">Contact</label>
+    </item>
+    <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+        <label xml:lang="de">Barrierefreiheit</label>
+        <label xml:lang="en">Accessibility</label>
+    </item>
   </menu>
   <menu id="search">
     <!-- search menu  -->

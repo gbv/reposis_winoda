@@ -6,6 +6,35 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  .mir-prop-nav {
+    float: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .project-main-nav {
+    .nav-link {
+      font-size: 1.125rem;
+    }
+  }
+
+  .flatmir-footer {
+    a {
+      font-size: 1.5rem;
+      color: $wGreen;
+      &:hover,
+      &:focus {
+        color: $wGreen;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .internal_links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {

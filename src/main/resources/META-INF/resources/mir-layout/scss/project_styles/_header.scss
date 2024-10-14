@@ -8,6 +8,43 @@
 
 // logo and menu container
 
+  #project_logo_box {
+    float: none;
+  }
+
+  html > body > header {
+    border: 1px solid $wGrayLine;
+    min-width: 320px;
+    background-color: white;
+  }
+
+  .header_box {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 1rem 0;
+    .project_logo_box {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem 0  0;
+      a {
+        display: block;
+      }
+      img {
+        width: 225px;
+      }
+    }
+    .project_nav_box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      .project-main-nav {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
