@@ -17,7 +17,7 @@
 $wGreen:      #AFCA0B;
 $wBlue:       #2581C4;
 $wBlueLight:  #e7f6ff;
-$bText:       #364151;
+$wText:       #364151;
 $wGrayLight:  #f9f9f9;
 $wGrayContur: #e6e6e6;
 $wGrayLine:   #eaeaea;
@@ -30,11 +30,35 @@ $wGrayLine:   #eaeaea;
 $primary: $wBlue;
 $secondary: $wGreen;
 
-$body-color: $bText;
+$body-color: $wText;
 $font-size-base: 1rem;
 $web-font-path: "https://webfonts.gbv.de/css2?family=Montserrat:wght@600&family=Source+Sans+3&display=swap";
+$web-font-path: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap";
 $font-family-sans-serif: 'Source Sans 3', Helvetica, Arial, sans-serif;
-$headings-font-family: Montserrat, Helvetica, Arial, sans-serif;
-$headings-font-weight: 600;
 
-$navbar-light-color: $bText;
+$headings-font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+$headings-font-weight: 600;
+$headings-color: $wBlue;
+
+$navbar-light-color: $wText;
+$navbar-light-hover-color: $wBlue;
+$navbar-light-active-color: $wBlue;
+
+$navbar-nav-link-padding-x: 1rem;
+
+$link-color: $wGreen;
+$link-hover-color: $wGreen;
+$link-decoration: underline;
+
+$dropdown-link-color: $wText;
+$dropdown-link-hover-color: $wBlue;
+$dropdown-link-hover-bg: white;
+$dropdown-link-active-color: $wBlue;
+$dropdown-link-active-bg: white;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;

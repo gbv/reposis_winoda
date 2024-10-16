@@ -24,7 +24,7 @@
 
         <div id="project_logo_box" class="project_logo_box">
           <a title="zur Startseite" href="{$WebApplicationBaseURL}">
-            <img alt="Logo WiNoDa" src="{$WebApplicationBaseURL}images/winoda-logo-white-back.svg" />
+            <img alt="Logo WiNoDa" src="{$WebApplicationBaseURL}images/winoda-logo-white-back.png" />
           </a>
         </div>
 
