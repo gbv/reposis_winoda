@@ -2,18 +2,102 @@
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
 
-  <section title="WiNoDa - Knowledge Lab" xml:lang="de">
-        <div class="jumbotwo" >
-        </div>
+  <section title="WiNoDa - Knowledge Lab Repositorium" xml:lang="de">
+    <head>
+      <meta name="title" content="WiNoDa - Knowledge Lab Repositorium" />
+      <meta name='description' content="Der Lehrmaterialenserver des WiNoDa - Knowledge Lab" />
+    </head>
 
-        <div class="container w-banner" >
-          <h1>Willkommen</h1>
-          <h2>bei WiNoDa</h2>
+    <div class="container w-banner">
+      <h1 class="text-white">Willkommen</h1>
+      <h2 class="text-white">beim WiNoDa Knowledge Lab Repositorium</h2>
+    </div>
+    <div class="jumbotwo mt-5" id="project-index-search">
+      <div class="row">
+        <div class="col-12 col-md-9 offset-md-2" lang="de">
+          <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline"
+            role="search">
+            <div class="input-group input-group-lg w-100">
+              <input
+                name="condQuery"
+                placeholder="Suche in allen Dokumenten"
+                class="form-control search-query"
+                id="project-searchInput"
+                type="text" />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-
+      </div>
+    </div>
+    <script src="../js/jquery.number.js"></script>
+    <script>
+      $( document ).ready(function() {
+      $.ajax({
+      type: "GET",
+      url: "../api/v1/search?q=objectType:mods AND
+      state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
+      dataType: "jsonp",
+      success: function (data) {
+      $('#project-searchInput.deactivated').attr('placeholder', 'Suche in ' +
+      $.number(data.response.numFound,0, ',', '.') + '
+      Dokumenten');
+      },
+      });
+      });
+    </script>
   </section>
 
+  <section xml:lang="en" title="WiNoDa - Knowledge Lab Repository">
+    <div class="container w-banner">
+      <h1>Welcome</h1>
+      <h2>at WiNoDa Knowledge Lab repository</h2>
+    </div>
+    <div class="jumbotwo mt-5" id="project-index-search">
+      <div class="row">
+        <div class="col-md-9 offset-md-2" lang="en">
+          <form action="../servlets/solr/find" id="project-searchMainPage" class="form-inline"
+            role="search">
+            <div class="input-group input-group-lg w-100">
+              <input
+                name="condQuery"
+                placeholder="Search in all documents"
+                class="form-control search-query"
+                id="project-searchInput"
+                type="text" />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/jquery.number.js"></script>
+    <script>
+      $( document ).ready(function() {
+      $.ajax({
+      type: "GET",
+      url: "../api/v1/search?q=objectType:mods AND
+      state:published&amp;rows=0&amp;wt=json&amp;json.wrf=?",
+      dataType: "jsonp",
+      success: function (data) {
+      $('#project-searchInput.deactivated').attr('placeholder', 'Search in ' +
+      $.number(data.response.numFound,0, ',', '.') +
+      ' documents');
+      },
+      });
+      });
+    </script>
+  </section>
   <meta>
-    <log date="2015-05-22" time="11:12" labelPath=" » Start" lastEditor="Kathleen Neumann" />
   </meta>
+
 </MyCoReWebPage>

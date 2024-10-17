@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<navigation dir="/content" href="navigation" hrefStartingPage="/content/index.xml" template="template_mir">
+<navigation dir="/content" href="navigation" hrefStartingPage="/content/index.xml"
+  template="template_mir">
   <menu id="main" dir="/content/main">
     <label xml:lang="de">Hauptmenü</label>
     <label xml:lang="en">Main menu</label>
@@ -15,21 +16,21 @@
   <menu id="below" dir="/content/below">
     <label xml:lang="de">Fußzeile</label>
     <label xml:lang="en">Footer</label>
-    <item href="/content/below/imprint.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-        <label xml:lang="de">Impressum</label>
-        <label xml:lang="en">Imprint</label>
+    <item href="/content/below/imprint.xml" type="intern">
+      <label xml:lang="de">Impressum</label>
+      <label xml:lang="en">Imprint</label>
     </item>
-    <item href="/content/below/rights.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-        <label xml:lang="de">Datenschutz</label>
-        <label xml:lang="en">Privacy Notice</label>
+    <item href="/content/below/rights.xml" type="intern">
+      <label xml:lang="de">Datenschutz</label>
+      <label xml:lang="en">Privacy Notice</label>
     </item>
-    <item href="/content/below/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-        <label xml:lang="de">Kontakt</label>
-        <label xml:lang="en">Contact</label>
+    <item href="/content/below/contact.xml" type="intern">
+      <label xml:lang="de">Kontakt</label>
+      <label xml:lang="en">Contact</label>
     </item>
-    <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-        <label xml:lang="de">Barrierefreiheit</label>
-        <label xml:lang="en">Accessibility</label>
+    <item href="/content/below/accessibility.xml" type="intern">
+      <label xml:lang="de">Barrierefreiheit</label>
+      <label xml:lang="en">Accessibility</label>
     </item>
   </menu>
   <menu id="search">
@@ -58,24 +59,24 @@
     </item>
   </menu>
   <menu id="browse">
-  <!-- search menu  -->
+    <!-- search menu  -->
     <label xml:lang="de">Blättern</label>
     <label xml:lang="en">Browse</label>
-    <item href="/content/browse/institutes.xml" type="intern">
-      <label xml:lang="de">Einrichtungen</label>
-      <label xml:lang="en">Institutions</label>
+    <item href="/content/browse/areaOfExpertise.xml" type="intern">
+      <label xml:lang="de">Fachgebieten</label>
+      <label xml:lang="en">Area of expertise</label>
     </item>
     <item href="/content/browse/genres.xml" type="intern">
-      <label xml:lang="de">Dokumenttypen</label>
-      <label xml:lang="en">Genres</label>
+      <label xml:lang="de">Materialarten</label>
+      <label xml:lang="en">Kind of material</label>
     </item>
-    <item href="/content/browse/sdnb.xml" type="intern">
-      <label xml:lang="de">Sachgruppen</label>
-      <label xml:lang="en">SNDB</label>
+    <item href="/content/browse/institutes.xml" type="intern">
+      <label xml:lang="de">Fakultät/Institut</label>
+      <label xml:lang="en">faculty/institution</label>
     </item>
     <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern">
       <label xml:lang="de">Personen</label>
-      <label xml:lang="en">Persons</label>
+      <label xml:lang="en">person names</label>
     </item>
   </menu>
   <menu id="publish" dir="/content/publish">
@@ -84,10 +85,6 @@
     <item href="/servlets/MCRActionMappingServlet/mods/create" type="intern">
       <label xml:lang="de">Publizieren</label>
       <label xml:lang="en">Publish</label>
-    </item>
-    <item href="/content/publish/importPPN.xml" type="intern">
-      <label xml:lang="de">Publizieren (PPN Import)</label>
-      <label xml:lang="en">Publish (PPN Import)</label>
     </item>
     <item href="/content/publish/guidelines.xml" type="intern">
       <label xml:lang="de">Leitlinien</label>
@@ -116,7 +113,8 @@
       </item>
     </group>
     <group id="contentadmin">
-      <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true" type="extern">
+      <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true"
+        type="extern">
         <label xml:lang="de">Klassifikationseditor</label>
         <label xml:lang="en">Edit Classifications</label>
       </item>

@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_genres">
   <label xml:lang="de" text="Genre" description="Liste der Materialarten" />
-  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_genres" />
+  <label xml:lang="x-uri" text="https://oer.winoda.de/api/v2/classifications/mir_genres" />
   <label xml:lang="en" text="genre" description="A list of material types" />
   <categories>
     <category ID="worksheet">

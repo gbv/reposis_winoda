@@ -2,66 +2,6 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
 
-  <!-- ========== extend editor-genres.xed ========== -->
-  <xed:template id="admin.fields">
-    <xed:include ref="failed-validation-messages" />
-
-    <!-- Einordnung -->
-    <fieldset>
-      <legend class="mir-fieldset-legend">
-        <xed:output i18n="mir.editor.heading.classification" />
-      </legend>
-      <div class="mir-fieldset-content">
-        <xed:include ref="genre" />
-        <xed:include ref="institutes.repeat" />
-        <xed:include ref="oer.class.areaOfExpertise.repeated" />
-      </div>
-    </fieldset>
-
-    <!-- Beschreibung -->
-    <fieldset>
-      <legend class="mir-fieldset-legend">Beschreibung</legend>
-      <div class="mir-fieldset-content">
-        <xed:include ref="title" />
-        <xed:include ref="abstract.simple" />
-        <xed:include ref="subject.simple" />
-        <xed:include ref="language" />
-        <xed:include ref="oer.class.languageLevel" />
-      </div>
-    </fieldset>
-
-    <!-- Veröffentlichung -->
-    <fieldset>
-      <legend class="mir-fieldset-legend">Veröffentlichung</legend>
-      <div class="mir-fieldset-content">
-        <xed:include ref="oer.status" />
-        <xed:include ref="oer.person.repeated" />
-        <xed:include ref="oer.license" />
-        <xed:include ref="date.created.datetimepicker" />
-        <xed:include ref="date.updated.datetimepicker" />
-        <xed:include ref="date.issued.datetimepicker" />
-        <xed:include ref="comment" />
-      </div>
-    </fieldset>
-
-    <!-- Strukturierung -->
-    <fieldset>
-      <legend class="mir-fieldset-legend">Strukturierung</legend>
-      <div class="mir-fieldset-content">
-        <xed:include ref="oer.related" />
-      </div>
-    </fieldset>
-
-    <xed:include ref="cancel.submit" />
-    <xed:include ref="cleanup-rules" />
-    <xed:include ref="validation-rules" />
-
-    <xed:include ref="javascript" />
-    <!-- frame for modal window -->
-    <xed:include ref="modal.name" />
-    <xed:include ref="modal.body" />
-  </xed:template>
-
   <!-- ========== validation ========== -->
   <xed:template id="validation-rules">
     <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true"
@@ -206,5 +146,6 @@
     <script src="{$WebApplicationBaseURL}js/mir/relatedItem-modal.min.js"
       type="text/javascript"></script>
   </xed:template>
+
 
 </xed:template>
