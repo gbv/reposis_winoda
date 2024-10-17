@@ -10,6 +10,16 @@
     float: none;
     display: flex;
     justify-content: flex-end;
+    .navbar-nav {
+      & > li > a {
+        color: $wText;
+        padding: .5rem 1rem;
+        &:focus,
+        &:hover {
+          color: $wBlue;
+        }
+      }
+    }
   }
 
   .project-main-nav {

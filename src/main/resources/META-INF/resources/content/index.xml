@@ -5,6 +5,12 @@
   <section title="WiNoDa - Knowledge Lab" xml:lang="de">
         <div class="jumbotwo" >
         </div>
+
+        <div class="container w-banner" >
+          <h1>Willkommen</h1>
+          <h2>bei WiNoDa</h2>
+        </div>
+
   </section>
 
   <meta>

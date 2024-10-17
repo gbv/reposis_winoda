@@ -169,5 +169,4 @@ $RECYCLE.BIN/
 
 # VSCode
 .vscode/
-
-
+*.code-workspace
